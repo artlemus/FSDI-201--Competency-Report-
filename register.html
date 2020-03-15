@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    /><link rel="stylesheet" href="mystyle.css">
+    <title>Pet Salon</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">about</a>
+          <a href="register.html.html">register</a>
+        </nav>
+    </header>
+<main>
+  <div class="register">
+    <form action="#">
+      <label for="name">Name:</label>
+      <input id="txtname" type="text" />
+      <p></p>
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="txtage" />
+      <p></p>
+      <label for="gender">Gender:</label>
+      <input type="text" name="gender" id="txtgender" />
+      <p></p>
+      <label for="breed">Breed:</label>
+      <input type="text" name="breed" id="txtbreed" />
+      <p>
+        <label for="services">Service:</label>
+        <select name="services" id="txtservice">
+          <option value="" disabled selected>----select service----</option>
+          <option value="Haircut">Haircut</option>
+          <option value="fullservice">FullService</option>
+          <option value="shower">Shower</option>
+          <option value=""></option>
+        </select>
+      </p>
+
+      <p>
+        <label for="Oname">Owners Name:</label>
+        <input id="txtOname" type="text" />
+      </p>
+      <p>
+        <label for="contact">Contact Phone:</label>
+        <input id="txtcontact" type="text" />
+      </p>
+
+      <input type="button" value="register" onclick="register();" />
+    </form>
+  </div>
+    <div class="display">
+      <div class="search">
+        <input type="search" name="search" id="petSearch">
+        <button>Search</button>
+        
+      </div>
+      <table>
+        <thead>
+          <th>name</th>
+          <th>age</th>
+          <th>gender</th>
+          <th>breed</th>
+          <th>service</th>
+          <th>owner name</th>
+          <th>contact</th>
+        </thead>
+        <tbody id="rowPet"></tbody>
+      </table>
+    </div>
+  </main>
+    <footer>
+        
+    </footer>
+    <script src="myscript.js"></script>
+  </body>
+</html>
